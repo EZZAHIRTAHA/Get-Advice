@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+}
+
+body
+{
+    background: url('https://wallpaperaccess.com/full/123346.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card
+{
+    background: rgba(255, 255, 255, 0.481);
+    width: 600px;
+    height: 250px;
+    box-shadow: 2px 5px 6px #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-text
+{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 3vmin;
+    line-height: 2rem;
+    font-weight: bold;
+    /* color:#be3d61; */
+}
+.card-btn
+{
+    width: 120px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border:1px solid #1c062f;
+    background:none;
+    color: #1e181a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card-btn:hover
+{
+    box-shadow: 3px 3px 60px rgb(204, 86, 86);
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .body
+    {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .card {
+        width: 80%;
+        height: 30%;
+        /* color: aqua; */
+
+    }
+  }
